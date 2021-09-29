@@ -1,0 +1,35 @@
+@import "../../scss/var";
+.wrapper {
+  font-size: 2.4rem;
+  padding-top: 0.9em;
+  width: 100%;
+  max-width: 15em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  input {
+    font-size: 1em;
+    max-width: 8em;
+  }
+}
+
+.btn {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  padding: 0.2em 0.8em;
+  text-transform: uppercase;
+  border-radius: 0.6em;
+  position: relative;
+  top: 0;
+  background-color: $success-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.loading {
+  compose: placeholder from "../AvalTickers/aval-tickers.module.scss";
+}

@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ticker Skeleton snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper wrapperSkeleton"
+  >
+    <div
+      class="tickWrapper tickWrapperSkeleton"
+    />
+    <div
+      class="textWrapper textWrapperSkeleton"
+    >
+      <span
+        class="name nameSkeleton"
+      />
+      <span
+        class="price priceSkeleton"
+      />
+    </div>
+    <div
+      class="changeWrapper changeWrapperSkeleton"
+    >
+      <span
+        class="changePercent changePercentSkeleton"
+      />
+      <span
+        class="change changeSkeleton"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Ticker empty snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper wrapperPaused"
+  >
+    <div
+      class="tickWrapper"
+    >
+      <svg
+        class="tick"
+      >
+        arrow-up-solid.svg
+      </svg>
+    </div>
+    <div
+      class="textWrapper"
+    >
+      <div
+        class="name"
+      />
+      <div
+        class="priceWrapper"
+      >
+        <div
+          class="price"
+        >
+          не число
+        </div>
+      </div>
+    </div>
+    <div
+      class="changeWrapper"
+    >
+      <div
+        class="changePercentWrapper"
+      >
+        <div
+          class="changePercent"
+        >
+          +не число
+        </div>
+      </div>
+      <div
+        class="changePriceWrapper"
+      >
+        <div
+          class="change"
+        >
+          +не число
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Ticker paused on toggle click 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper wrapperPaused"
+  >
+    <div
+      class="tickWrapper"
+    >
+      <svg
+        class="tick"
+      >
+        arrow-up-solid.svg
+      </svg>
+    </div>
+    <div
+      class="textWrapper"
+    >
+      <div
+        class="name"
+      >
+        TSL
+      </div>
+      <div
+        class="priceWrapper"
+      >
+        <div
+          class="price"
+        >
+          234,7
+        </div>
+      </div>
+    </div>
+    <div
+      class="changeWrapper"
+    >
+      <div
+        class="changePercentWrapper"
+      >
+        <div
+          class="changePercent"
+        >
+          +0,34
+        </div>
+      </div>
+      <div
+        class="changePriceWrapper"
+      >
+        <div
+          class="change"
+        >
+          +48,9
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Ticker renders 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="tickWrapper"
+    >
+      <svg
+        class="tick"
+      >
+        arrow-up-solid.svg
+      </svg>
+    </div>
+    <div
+      class="textWrapper"
+    >
+      <div
+        class="name"
+      >
+        TSL
+      </div>
+      <div
+        class="priceWrapper"
+      >
+        <div
+          class="price"
+        >
+          234,7
+        </div>
+      </div>
+    </div>
+    <div
+      class="changeWrapper"
+    >
+      <div
+        class="changePercentWrapper"
+      >
+        <div
+          class="changePercent"
+        >
+          +0,34
+        </div>
+      </div>
+      <div
+        class="changePriceWrapper"
+      >
+        <div
+          class="change"
+        >
+          +48,9
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,64 @@
+@import "../../scss/var";
+.wrapper {
+  font-size: 20rem; // 200px
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  padding: 0.175em;
+  z-index: 100;
+  background-color: #fff;
+  padding-right: 0.1em;
+  width: 50%;
+  max-width: 1.2em;
+  right: 0;
+  transition: 0.3s all;
+  border: 1px solid #000;
+  border-top-left-radius: 0.05em;
+  border-bottom-left-radius: 0.05em;
+  &Open {
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.toggler {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0.2em solid transparent;
+  border-bottom: 0.2em solid transparent;
+  border-right: 0.2em solid $border-color;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  z-index: -100;
+  cursor: pointer;
+}
+
+.tickers {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(1em, 1fr));
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.placeholder {
+  color: $gray-color;
+  display: inline-block;
+  font-size: 0.125em;
+}
+
+.content {
+  height: 100vh;
+  max-height: 1.5em;
+  overflow-x: hidden;
+  visibility: hidden;
+  &:hover {
+    visibility: visible;
+  }
+}
+
+.contentInner {
+  display: grid;
+  place-items: center;
+  visibility: visible;
+}

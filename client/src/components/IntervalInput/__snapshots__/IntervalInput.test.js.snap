@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interval input element renders 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="input"
+    >
+      <label
+        for="update-interval"
+      >
+        Update interval (ms)
+      </label>
+      <input
+        id="update-interval"
+        type="text"
+        value="5000"
+      />
+    </div>
+    <button
+      class="btn"
+    >
+      set
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Interval input element renders with loader 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <span
+      class="loading"
+    >
+      Loading...
+    </span>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,67 @@
+@mixin skeleton-settings {
+  background-color: $skeleton-color;
+  animation: animation-skeleton;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@mixin skeleton-keyframes {
+  @keyframes animation-skeleton {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 20%;
+    }
+  }
+}
+
+@mixin fades-keyframes {
+  @keyframes fade-in {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+}
+
+@mixin scroll-animation-settings {
+  @keyframes scroll-out {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @keyframes scroll-in {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .scrollEnterActive {
+    animation: scroll-in 200ms forwards;
+  }
+  .scrollExitActive {
+    animation: scroll-out 200ms forwards;
+  }
+}

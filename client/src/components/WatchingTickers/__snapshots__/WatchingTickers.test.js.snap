@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WatchingTickers /> loading 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="placeholder"
+    >
+      <span>
+        No watching tickers
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<WatchingTickers /> renders w/o watching tickers 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="placeholder"
+    >
+      <span>
+        No watching tickers
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<WatchingTickers /> renders with tickers 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="wrapper wrapperLoss wrapperPaused"
+    >
+      <div
+        class="tickWrapper tickWrapperLoss"
+      >
+        <svg
+          class="tick"
+        >
+          arrow-down-solid.svg
+        </svg>
+      </div>
+      <div
+        class="textWrapper"
+      >
+        <div
+          class="name"
+        >
+          TSLA
+        </div>
+        <div
+          class="priceWrapper"
+        >
+          <div
+            class="price"
+          >
+            276,43
+          </div>
+        </div>
+      </div>
+      <div
+        class="changeWrapper"
+      >
+        <div
+          class="changePercentWrapper"
+        >
+          <div
+            class="changePercent"
+          >
+            -0.90
+          </div>
+        </div>
+        <div
+          class="changePriceWrapper"
+        >
+          <div
+            class="change"
+          >
+            -105.18
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wrapper wrapperLoss wrapperPaused"
+    >
+      <div
+        class="tickWrapper tickWrapperLoss"
+      >
+        <svg
+          class="tick"
+        >
+          arrow-down-solid.svg
+        </svg>
+      </div>
+      <div
+        class="textWrapper"
+      >
+        <div
+          class="name"
+        >
+          GOOGL
+        </div>
+        <div
+          class="priceWrapper"
+        >
+          <div
+            class="price"
+          >
+            173,29
+          </div>
+        </div>
+      </div>
+      <div
+        class="changeWrapper"
+      >
+        <div
+          class="changePercentWrapper"
+        >
+          <div
+            class="changePercent"
+          >
+            -0.67
+          </div>
+        </div>
+        <div
+          class="changePriceWrapper"
+        >
+          <div
+            class="change"
+          >
+            -52.05
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

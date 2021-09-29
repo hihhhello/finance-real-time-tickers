@@ -1,0 +1,35 @@
+@import "../../scss/var";
+@import "../../scss/mixin";
+
+@include fades-keyframes;
+
+.wrapper {
+  position: relative;
+  padding: 0.5em;
+  border: 1px solid $border-color;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 2.6rem;
+  display: grid;
+  place-items: center;
+  color: $primary-font-color;
+  font-weight: 700;
+  overflow: hidden;
+  animation: fade-in 500ms alternate ease-out;
+  &::after {
+    content: "ADD +";
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-110%);
+    transition: 0.5s all ease-in-out;
+    z-index: 10;
+    border-radius: 0.5em;
+    background-color: rgba(0, 128, 0, 1);
+  }
+  &:hover::after {
+    transform: translateX(0);
+  }
+}

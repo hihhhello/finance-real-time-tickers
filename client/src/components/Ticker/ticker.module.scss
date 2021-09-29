@@ -1,0 +1,134 @@
+@import "../../scss/var";
+@import "../../scss/mixin";
+
+@include skeleton-keyframes;
+@include scroll-animation-settings;
+@include fades-keyframes;
+
+.wrapper {
+  position: relative;
+  color: $green-color;
+  display: flex;
+  align-items: center;
+  font-size: 0.071em; // ~12px (depends on fz of grid container)
+  animation: fade-in 500ms alternate ease-out;
+  gap: 0.65em;
+  padding: 0.5em;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 0.5em;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &Skeleton {
+    pointer-events: none;
+  }
+  &Loss {
+    color: $red-color;
+  }
+  &Paused {
+    filter: grayscale(100%);
+  }
+}
+
+.tickWrapper {
+  display: grid;
+  place-items: center;
+  min-height: 2.7em;
+  min-width: 2.7em;
+  background-color: $light-green-color;
+  border-radius: 0.35em;
+  &Loss {
+    background-color: $light-red-color;
+  }
+  &Skeleton {
+    @include skeleton-settings;
+  }
+}
+
+.tick {
+  max-height: 1.4em;
+  max-width: 1.4em;
+}
+
+.textWrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-width: 5.3em;
+  max-width: 10em;
+  &Skeleton {
+    min-height: 100%;
+    justify-content: space-around;
+  }
+}
+
+.priceWrapper {
+  max-height: 1em;
+  overflow: hidden;
+}
+
+.changePriceWrapper,
+.changePercentWrapper {
+  overflow: hidden;
+}
+
+.price,
+.name {
+  overflow: hidden;
+  color: $primary-font-color;
+  &Skeleton {
+    height: 0.8em;
+    width: 100%;
+    border-radius: 100em;
+    @include skeleton-settings;
+  }
+}
+
+.name {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  &Skeleton {
+    width: 50%;
+  }
+}
+
+.changeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  flex: 2;
+  &Skeleton {
+    height: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+.changePercent,
+.change {
+  overflow: hidden;
+  &Skeleton {
+    height: 0.5em;
+    width: 60%;
+    max-width: 2.5em;
+    border-radius: 100em;
+    align-self: flex-end;
+    @include skeleton-settings;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.changePercent {
+  font-weight: 700;
+  padding-right: em;
+  &::after {
+    content: "%";
+    margin-left: 0.1em;
+  }
+}
