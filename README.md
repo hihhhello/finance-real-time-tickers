@@ -1,30 +1,21 @@
 # Finance real time tickers
 
-## Implemented features
+## :star: Implemented features
+- possibility to switch on/off tickers by user
+- possibility to specify interval time by user
+- possibility to add/remove ticker from watching group
+- additional visual effects to highlight positive or negative changes in the prices
 
-:star: possibility to switch on/off tickers by user
+## :exclamation: To be implemented features
+- Ticker's graphs
 
-:star: possibility to specify interval time by user
+## :hammer: Used technologies:
 
-:star: possibility to add/remove ticker from watching group
-
-:star: additional visual effects to highlight positive or negative changes in the prices
-
-## To be implemented features
-
-:exclamation: ticker stats for user session
-
-## Used technologies:
-
-:hammer: React with hooks
-
-:hammer: Redux (redux-toolkit)
-
-:hammer: Socket.io
-
-:hammer: SCSS modules
-
-:hammer: [Testing Library](https://testing-library.com)
+- React with hooks
+- Redux (redux-toolkit)
+- Socket.io
+- SCSS modules
+- [Testing Library](https://testing-library.com)
 
 ## Run server
 
